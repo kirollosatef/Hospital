@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS securitymen;
+DROP TABLE IF EXISTS nurses;
+DROP TABLE IF EXISTS branches_doctors;
+DROP TABLE IF EXISTS diseases_medicines;
+DROP TABLE IF EXISTS doctors_patients_branches;
+DROP TABLE IF EXISTS patients_diseases;
+DROP TABLE IF EXISTS branches;
+DROP TABLE IF EXISTS patients;
+DROP TABLE IF EXISTS managers;
+DROP TABLE IF EXISTS diseases;
+DROP TABLE IF EXISTS medicines;
+DROP TABLE IF EXISTS doctors;
