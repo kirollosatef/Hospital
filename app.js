@@ -8,7 +8,6 @@ app.use(express.json()); //for json files
 app.use(bodyParser.urlencoded({ extended: false }));
 //sequelize
 // createTables();
-
 //All Routes
 let doctorRoutes = require("./routes/doctor.routes");
 app.use(doctorRoutes);

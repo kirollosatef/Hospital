@@ -1,75 +1,75 @@
 CREATE TABLE branches (
   id int(50) NOT NULL,
-  name varchar(255) DEFAULT NULL,
-  location varchar(255) DEFAULT NULL,
-  managerId int(50) DEFAULT NULL
+  name varchar(255) NULL,
+  location varchar(255) NULL,
+  managerId int(50) NULL
 );
 CREATE TABLE branches_doctors (
   id int(50) NOT NULL,
-  brancheId int(50) DEFAULT NULL,
-  doctorId int(50) DEFAULT NULL,
-  nHours int(50) DEFAULT NULL
+  brancheId int(50) NULL,
+  doctorId int(50) NULL,
+  nHours int(50) NULL
 );
 CREATE TABLE diseases (
   id int(50) NOT NULL,
-  name varchar(255) DEFAULT NULL
+  name varchar(255) NULL
 );
 CREATE TABLE diseases_medicines (
   id int(50) NOT NULL,
-  diseaseId int(50) DEFAULT NULL,
-  medicineId int(50) DEFAULT NULL
+  diseaseId int(50) NULL,
+  medicineId int(50) NULL
 );
 CREATE TABLE doctors (
   id int(50) NOT NULL,
-  name varchar(255) DEFAULT NULL,
-  phone varchar(255) DEFAULT NULL,
-  email varchar(255) DEFAULT NULL,
-  specialty varchar(255) DEFAULT NULL,
-  xpYears int(50) DEFAULT NULL
+  name varchar(255) NULL,
+  phone varchar(255) NULL,
+  email varchar(255) NULL,
+  specialty varchar(255) NULL,
+  xpYears int(50) NULL
 );
 CREATE TABLE doctors_patients_branches (
   id int(50) NOT NULL,
-  doctorId int(50) DEFAULT NULL,
-  patientId int(50) DEFAULT NULL,
-  brancheId int(50) DEFAULT NULL
+  doctorId int(50) NULL,
+  patientId int(50) NULL,
+  brancheId int(50) NULL
 );
 CREATE TABLE managers (
   id int(50) NOT NULL,
-  name varchar(255) DEFAULT NULL,
-  phone varchar(255) DEFAULT NULL,
-  email varchar(255) DEFAULT NULL
+  name varchar(255) NULL,
+  phone varchar(255) NULL,
+  email varchar(255) NULL
 );
 CREATE TABLE medicines (
   id int(50) NOT NULL,
-  name varchar(255) DEFAULT NULL,
-  expiryDate varchar(255) DEFAULT NULL
+  name varchar(255) NULL,
+  expiryDate varchar(255) NULL
 );
 CREATE TABLE nurses (
   id int(50) NOT NULL,
-  name varchar(255) DEFAULT NULL,
-  phone varchar(255) DEFAULT NULL,
-  email varchar(255) DEFAULT NULL,
-  xpYears int(50) DEFAULT NULL,
-  doctorId int(50) DEFAULT NULL
+  name varchar(255) NULL,
+  phone varchar(255) NULL,
+  email varchar(255) NULL,
+  xpYears int(50) NULL,
+  doctorId int(50) NULL
 );
 CREATE TABLE patients (
   id int(50) NOT NULL,
-  name varchar(255) DEFAULT NULL,
-  phone varchar(255) DEFAULT NULL,
-  email varchar(255) DEFAULT NULL,
-  healthCare tinyint(1) DEFAULT NULL
+  name varchar(255) NULL,
+  phone varchar(255) NULL,
+  email varchar(255) NULL,
+  healthCare tinyint(1) NULL
 );
 CREATE TABLE patients_diseases (
   id int(50) NOT NULL,
-  patientId int(50) DEFAULT NULL,
-  diseaseId int(50) DEFAULT NULL
+  patientId int(50) NULL,
+  diseaseId int(50) NULL
 );
 CREATE TABLE securitymen (
   id int(50) NOT NULL,
-  name varchar(255) DEFAULT NULL,
-  phone varchar(255) DEFAULT NULL,
-  email varchar(255) DEFAULT NULL,
-  brancheId int(50) DEFAULT NULL
+  name varchar(255) NULL,
+  phone varchar(255) NULL,
+  email varchar(255) NULL,
+  brancheId int(50) NULL
 );
 ALTER TABLE branches
 ADD PRIMARY KEY (id),
